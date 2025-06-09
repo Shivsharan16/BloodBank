@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background: #701010;
+  padding: 10px 0;
+  color: white;
+  position: sticky;
+  top: 0;
+  /* z-index: 1000; */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: medium;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.banner {
+  color: rgb(221, 184, 184);
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(142, 22, 22);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.banner h1 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  background-color: #b42424;
+  padding: 3rem 1rem;
+  background-image: url(donation-wg-bg.88550ec97e3e88bbda3e.png);
+}
+
+.about-section h2 {
+  color: #b91b1b;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #b30000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.services-section {
+  background: #f38f8f;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #9a1212;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-box {
+  background: #b11f1f;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(200, 0, 0, 0.08);
+  padding: 30px 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(117, 12, 12, 0.15);
+}
+
+.service-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f3e8e8;
+}
+
+.donation-works {
+  background: #fef5f5;
+  padding: 3rem 1rem;
+}
+
+.donation-works h2 {
+  color: #bb1919;
+  margin-bottom: 1rem;
+}
+
+.donation-works ol {
+  list-style-position: inside;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: #911313;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #f9f6f6;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #fcfafa;
+  padding-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #b9adad;
+}
+
+.footer-column ul li a:hover,
+.footer-bottom a:hover {
+  text-decoration: underline;
+  color: #fdfcfc;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #7c7676;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  color: #e9dede;
+  text-decoration: none;
+}
+
+.column {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ======= Responsive Adjustments ======= */
+@media (max-width: 992px) {
+
+  .section,
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section,
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+.hero {
+  background: url('https://cdn.pixabay.com/photo/2016/03/31/23/42/blood-1290501_960_720.png') no-repeat center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(215, 43, 43);
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 52px;
+}
+
+.content {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.content h2 {
+  color: #b30000;
+  margin-bottom: 20px;
+}
+
+.benefits,
+.facts {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.benefits ul,
+.facts ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
