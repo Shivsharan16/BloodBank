@@ -24,7 +24,8 @@ header {
   color: white;
   position: sticky;
   top: 0;
-  /* z-index: 1000; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-links {
@@ -60,13 +61,13 @@ header {
 }
 
 .about-section {
-  background-color: #b42424;
+  background-color: #e65656;
   padding: 3rem 1rem;
   background-image: url(donation-wg-bg.88550ec97e3e88bbda3e.png);
 }
 
 .about-section h2 {
-  color: #b91b1b;
+  color: #f5e0e0;
   margin-bottom: 1rem;
 }
 
@@ -74,17 +75,80 @@ header {
   max-width: 800px;
   margin: 0.5rem auto;
   font-size: 1rem;
-  color: #333;
+  color: #f3eded;
 }
 
 .btn {
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
-  background-color: #b30000;
+  background-color: #c91c1c;
   color: white;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
+}
+
+
+.hero {
+  background: url('https://cdn.pixabay.com/photo/2016/03/31/23/42/blood-1290501_960_720.png') no-repeat center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(201, 40, 40);
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 52px;
+}
+
+.content {
+  padding: 40px 20px;
+  text-align: center;
+}
+.benefits ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  line-height: 1.8;
+}
+.facts ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+  text-align: left;
+  line-height: 1.8;
+}
+.content h2 {
+  color: #ed1212;
+  margin-bottom: 20px;
+}
+
+.faq-section {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.faq {
+  border: 1px solid #f7d7d7;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background-color: #f9c5c5;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  background-color: #fff;
+  padding: 15px;
 }
 
 .services-section {
@@ -220,7 +284,6 @@ header {
   text-align: center;
 }
 
-/* ======= Responsive Adjustments ======= */
 @media (max-width: 992px) {
 
   .section,
@@ -241,11 +304,11 @@ header {
 
 @media (max-width: 768px) {
 
-  .section,
-  .nav-links {
+  .section,.nav-links {
     flex-direction: column;
     text-align: center;
     padding: 10px;
+    text-align: center;
   }
 
   .banner h1 {
@@ -279,44 +342,10 @@ header {
     width: 100%;
     padding-bottom: 20px;
   }
-}
-
-.hero {
-  background: url('https://cdn.pixabay.com/photo/2016/03/31/23/42/blood-1290501_960_720.png') no-repeat center;
-  background-size: cover;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(215, 43, 43);
-  text-shadow: 2px 2px 4px #000;
-  text-align: center;
-  padding: 20px;
-}
-
-.hero h2 {
-  font-size: 52px;
-}
-
-.content {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.content h2 {
-  color: #b30000;
-  margin-bottom: 20px;
-}
-
-.benefits,
-.facts {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-}
-
-.benefits ul,
-.facts ol {
-  margin-left: 20px;
-  margin-top: 10px;
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .nav-links li {
+    margin: 5px 0;
+  }
 }
