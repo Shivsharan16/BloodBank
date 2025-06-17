@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+  
   background-color: #f4f4f4;
 }
 
@@ -23,7 +23,6 @@ header {
   padding: 10px 0;
   color: white;
   position: sticky;
-  top: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -31,20 +30,21 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   font-size: medium;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 350;
 }
 
 .banner {
   color: rgb(221, 184, 184);
   text-align: center;
   padding: 20px;
+  line-height: 1.6;
   background-color: rgb(142, 22, 22);
 }
 
@@ -63,6 +63,7 @@ header {
 .about-section {
   background-color: #e65656;
   padding: 3rem 1rem;
+  line-height: 1.6;
   background-image: url(donation-wg-bg.88550ec97e3e88bbda3e.png);
 }
 
@@ -178,6 +179,7 @@ header {
   padding: 30px 20px;
   width: 220px;
   text-align: center;
+  line-height: 1.6;
   transition: transform 0.3s ease;
 }
 
@@ -202,6 +204,7 @@ header {
 .donation-works {
   background: #fef5f5;
   padding: 3rem 1rem;
+  line-height: 1.6;
 }
 
 .donation-works h2 {
@@ -224,6 +227,7 @@ header {
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #f9f6f6;
+  line-height: 1.6;
 }
 
 .footer-top {
@@ -307,8 +311,8 @@ header {
   .section,.nav-links {
     flex-direction: column;
     text-align: center;
-    padding: 10px;
-    text-align: center;
+    /* padding: 10px; */
+   
   }
 
   .banner h1 {
@@ -320,7 +324,7 @@ header {
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: 5px;
   }
 
   .banner p {
